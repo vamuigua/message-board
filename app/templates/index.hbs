@@ -2,4 +2,10 @@
 
 <h3>What's your Question....Ask anything!</h3>
 
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.content}} {{question.author}} {{question.notes}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
